@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	"editor.wrappingColumn": 0,
+	"editor.fontFamily": "MS Gothic",
+	"editor.fontSize": 15,
+	"editor.insertSpaces": false,
+	"editor.quickSuggestions": false,
+	"editor.mouseWheelZoom": true,
+	"html.format.preserveNewLines": false,
+	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\git-bash.exe",
+	"terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe"
+}

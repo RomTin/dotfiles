@@ -1,0 +1,12 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+	{
+		"key": "shift+enter",
+		"command": "editor.action.format",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+alt+enter",
+		"command": "workbench.action.terminal.openNativeConsole"
+	}
+]
