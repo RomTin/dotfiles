@@ -13,8 +13,8 @@ set cursorline
 " tab
 set expandtab
 set tabstop<
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
 
 " key
 set backspace=eol,indent
