@@ -29,9 +29,6 @@ nnoremap sp gT
 nnoremap sq :<C-u>q<CR>
 nnoremap sQ :<C-u>bd<CR>
 
-" syntack
-syntax on
-
 " plugin
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle'))
@@ -47,7 +44,12 @@ filetype plugin indent on
 NeoBundleCheck
 
 " color
-colorscheme peachpuff
+set background=dark
+"colorscheme peachpuff
+"colorsheme imas
+colorscheme hybrid
+
+syntax on
 
 " original
 set backspace=indent,eol,start
