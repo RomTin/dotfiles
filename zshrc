@@ -1,15 +1,15 @@
 #export LANG=ja_JP.UTF-8
 
 export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/sbin
 export PATH=$PATH:$HOME/usr/bin
 export MANPATH=/usr/local/share/man:/usr/local/man:/usr/share/man
 
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }
 
 alias clr='clear'
-alias ls='ls -G'
+alias ls='ls --color=auto'
 alias la='ls -la'
-alias dirls='count=0; for i in `dirs -l`; do; echo $count $i; count=`expr ${count} + 1`; done'
 
 # git current branch
 function prompt-git-current-branch {
@@ -36,7 +36,7 @@ function prompt-git-current-branch {
 setopt prompt_subst
 
 PROMPT='%B%K{blue}%F{white}%n@%m%f%k %F{blue}[%d]%f`prompt-git-current-branch`%b
-%K{cyan}%F{blue}%f  %B%#%b%k '
+%K{cyan} %B%#%b%k '
 
 HISTFILE=~/.histfile
 HISTSIZE=10000
