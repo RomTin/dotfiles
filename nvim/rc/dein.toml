@@ -17,6 +17,9 @@ repo = 'ujihisa/unite-colorscheme'
 repo = 'Shougo/neomru.vim'
 
 [[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
 repo = 'cocopon/iceberg.vim'
 hook_add = '''
   set background=dark
