@@ -35,6 +35,10 @@ nnoremap sQ :<C-u>bd<CR>
 set backspace=indent,eol,start
 set backspace=2
 
+" alias
+:command Q qa
+:command WQ wqa
+
 " shift swap
 "inoremap  1 !
 "inoremap  2 "
@@ -89,6 +93,9 @@ endif
 if dein#check_install()
   call dein#install()
 endif
+
+" NERDTree auto start
+autocmd vimenter * NERDTree
 
 filetype plugin indent on
 syntax on
