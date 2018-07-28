@@ -1,1 +1,8 @@
-# as you can see
+# dotfiles
+
+## usage
+
+```
+$ sh ./initialize.sh
+$ sh ./setup.sh
+```

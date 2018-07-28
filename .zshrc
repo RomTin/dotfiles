@@ -5,10 +5,14 @@ export PATH=$PATH:/sbin
 export PATH=$PATH:$HOME/usr/bin
 export MANPATH=/usr/local/share/man:/usr/local/man:/usr/share/man
 
+export GOPATH=$HOME/usr/go:$HOME/Workspace/go
+export PATH=$HOME/usr/go/bin:$HOME/Workspace/go/bin:$PATH
+
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }
 
+alias vim='nvim'
 alias clr='clear'
-alias ls='ls --color=auto'
+alias ls='ls -G'
 alias la='ls -la'
 
 # git current branch
@@ -32,6 +36,11 @@ function prompt-git-current-branch {
  
         echo "%F{$color}[$name]%f"
 }
+
+
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi
 
 setopt prompt_subst
 
