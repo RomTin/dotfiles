@@ -1,12 +1,37 @@
 // Place your settings in this file to overwrite default and user settings.
 {
-	"editor.wrappingColumn": 0,
-	"editor.fontFamily": "MS Gothic",
-	"editor.fontSize": 15,
-	"editor.insertSpaces": false,
-	"editor.quickSuggestions": false,
-	"editor.mouseWheelZoom": true,
-	"html.format.preserveNewLines": false,
-	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\git-bash.exe",
-	"terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe"
+  // フォント サイズをピクセル単位で制御します。
+  "editor.fontSize": 18,
+  // ファイルを開くと、そのファイルの内容に基づいて `editor.tabSize` と `editor.insertSpaces` が検出されます。
+  "editor.detectIndentation": false,
+  // 1 つのタブに相当するスペースの数。`editor.detectIndentation` がオンの場合、この設定はファイル コンテンツに基づいて上書きされます。
+  "editor.tabSize": 2,
+  // Tab キーを押すとスペースが挿入されます。`editor.detectIndentation` がオンの場合、この設定はファイル コンテンツに基づいて上書きされます。
+  "editor.insertSpaces": true,
+  // 入力中に候補を自動的に表示するかどうかを制御します
+  "editor.quickSuggestions": false,
+  // 要素の前にある既存の改行を保持するかどうか。要素の前でのみ機能し、タグの内側やテキストに対しては機能しません。
+  "html.format.preserveNewLines": false,
+  // ターミナルが OS X で使用するシェルのパス。
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
+  "editor.renderWhitespace": "boundary",
+  // 行の折り返し方法を制御します。次の値を指定できます。
+  //  - 'off' (折り返さない),
+  //  - 'on' (ビューポート折り返し),
+  //  - 'wordWrapColumn' ('editor.wordWrapColumn' で折り返し) or
+  //  - 'bounded' (ビューポートと 'editor.wordWrapColumn' の最小値で折り返し).
+  "editor.wordWrap": "on",
+  // エディターで左角かっこの後に自動的に右角かっこを挿入するかどうかを制御します
+  "editor.autoClosingBrackets": false,
+  // editor.cursorStyle が 'line' に設定されている場合、カーソルの幅を制御する
+  "editor.cursorWidth": 3,
+  // エディターで制御文字を表示する必要があるかどうかを制御します
+  "editor.renderControlCharacters": true,
+  // ターミナルのカーソルを点滅させるかどうかを制御します。
+  "terminal.integrated.cursorBlinking": true,
+  // 端末のカーソルのスタイルを制御します。
+  "terminal.integrated.cursorStyle": "line",
+  // ターミナルのフォント サイズをピクセル単位で制御します。
+  "terminal.integrated.fontSize": 18,
 }

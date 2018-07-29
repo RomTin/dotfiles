@@ -1,12 +1,44 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-	{
-		"key": "shift+enter",
-		"command": "editor.action.format",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "shift+alt+enter",
-		"command": "workbench.action.terminal.openNativeConsole"
-	}
+  // フォーマット
+  {
+    "key": "shift+enter",
+    "command": "editor.action.format",
+    "when": "editorTextFocus"
+  },
+  // ターミナル起動
+  {
+    "key": "shift+cmd+enter",
+    "command": "workbench.action.terminal.new",
+    "when": "!terminalFocus"
+  },
+  // ターミナル分割
+  {
+    "key": "shift+cmd+enter",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  // ターミナル終了
+  {
+    "key": "shift+cmd+backspace",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  // ターミナル: 左のタブに移動
+  {
+    "key": "shift+cmd+left",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  // ターミナル: 右のタブに移動
+  {
+    "key": "shift+cmd+right",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  // ターミナル表示・非表示切り替え
+  {
+    "key": "shift+cmd+space",
+    "command": "workbench.action.terminal.toggleTerminal"
+  }
 ]
