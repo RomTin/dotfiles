@@ -8,6 +8,8 @@ export MANPATH=/usr/local/share/man:/usr/local/man:/usr/share/man
 export GOPATH=$HOME/usr/go:$HOME/Workspace/go
 export PATH=$HOME/usr/go/bin:$HOME/Workspace/go/bin:$PATH
 
+eval $(thefuck --alias)
+
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }
 
 alias vim='nvim'
