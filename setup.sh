@@ -1,5 +1,5 @@
 # brew
-git clone https://github.com/RomTin/Brewfile.git $HOME/.config/brewfile
+brew set_repo RomTin/Brewfile
 brew file install
 
 # vscode configuration
@@ -12,7 +12,7 @@ pyenv install -v 3.7.0
 pyenv global 3.7.0
 
 # go configuration
-go getgithub.com/motemen/gore
+go get github.com/motemen/gore
 go get github.com/nsf/gocode
 go get github.com/k0kubun/pp
 go get golang.org/x/tools/cmd/godoc
