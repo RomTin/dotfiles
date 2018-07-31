@@ -15,5 +15,8 @@ ln -s $HOME/Workspace/dotfiles/zshrc $HOME/.zshrc
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install rcmdnk/file/brew-file
 
+# disable autoboot
+sudo nvram AutoBoot=%00
+
 # change login shell
 chsh -s /bin/zsh && exec /bin/zsh
