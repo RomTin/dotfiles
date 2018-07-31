@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   // フォント サイズをピクセル単位で制御します。
-  "editor.fontSize": 18,
+  "editor.fontSize": 15,
   // ファイルを開くと、そのファイルの内容に基づいて `editor.tabSize` と `editor.insertSpaces` が検出されます。
   "editor.detectIndentation": false,
   // 1 つのタブに相当するスペースの数。`editor.detectIndentation` がオンの場合、この設定はファイル コンテンツに基づいて上書きされます。
@@ -33,5 +33,8 @@
   // 端末のカーソルのスタイルを制御します。
   "terminal.integrated.cursorStyle": "line",
   // ターミナルのフォント サイズをピクセル単位で制御します。
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontSize": 15,
+  "window.zoomLevel": 0,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
 }

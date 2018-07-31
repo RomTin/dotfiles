@@ -11,6 +11,10 @@ pywnv install -v 2.7.15
 pyenv install -v 3.7.0
 pyenv global 3.7.0
 
+# node install
+nodebrew install-binary v10.7.0
+nodebrew use v10.7.0
+
 # go configuration
 go get github.com/motemen/gore
 go get github.com/nsf/gocode

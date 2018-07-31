@@ -4,6 +4,7 @@
 mkdir -p $HOME/usr/go $HOME/usr/bin
 mkdir -p $HOME/Workspace/go
 mkdir -p $HOME/.config
+mkdir -p $HOME/.nodebrew/src
 
 # set up dotfiles
 git clone https://github.com/RomTin/dotfiles.git $HOME/Workspace/dotfiles
