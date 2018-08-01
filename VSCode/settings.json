@@ -23,7 +23,7 @@
   //  - 'bounded' (ビューポートと 'editor.wordWrapColumn' の最小値で折り返し).
   "editor.wordWrap": "on",
   // エディターで左角かっこの後に自動的に右角かっこを挿入するかどうかを制御します
-  "editor.autoClosingBrackets": false,
+  "editor.autoClosingBrackets": true,
   // editor.cursorStyle が 'line' に設定されている場合、カーソルの幅を制御する
   "editor.cursorWidth": 3,
   // エディターで制御文字を表示する必要があるかどうかを制御します
