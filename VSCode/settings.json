@@ -37,4 +37,5 @@
   "window.zoomLevel": 0,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+  "python.pythonPath": "~/.pyenv/versions/3.7.0/bin/python"
 }
