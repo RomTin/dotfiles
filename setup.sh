@@ -22,6 +22,7 @@ go get github.com/k0kubun/pp
 go get golang.org/x/tools/cmd/godoc
 go get github.com/sqs/goreturns
 go get github.com/uudashr/gopkgs/cmd/gopkgs
+go get github.com/rogpeppe/godef
 
 # erlang configuration
 wget https://s3.amazonaws.com/rebar3/rebar3 && mv ./rebar3 $HOME/usr/bin/rebar3 && chmod +x $HOME/usr/bin/rebar3
