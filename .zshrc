@@ -18,6 +18,7 @@ alias vim='nvim'
 alias clr='clear'
 alias ls='ls -G'
 alias la='ls -la'
+alias go='richgo'
 
 # git current branch
 function prompt-git-current-branch {
@@ -48,7 +49,7 @@ fi
 
 setopt prompt_subst
 
-PROMPT='%B%K{blue}%F{white}%n@%m%f%k %F{blue}[%d]%f`prompt-git-current-branch`%b
+PROMPT='%B%K{blue}%F{white}%n%m%f%k %F{blue}[%d]%f`prompt-git-current-branch`%b
 %K{cyan} %B%#%b%k '
 
 HISTFILE=~/.histfile
