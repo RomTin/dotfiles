@@ -1,3 +1,4 @@
+satokaz.vscode-bs-ctrlchar-remover
 CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
 ipedrazas.kubernetes-snippets
