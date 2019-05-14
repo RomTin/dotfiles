@@ -1,5 +1,7 @@
 #export LANG=ja_JP.UTF-8
 
+export AWS_DEFAULT_REGION="ap-northeast-1"
+
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/sbin
 export PATH=$PATH:$HOME/usr/bin
@@ -14,6 +16,7 @@ eval $(thefuck --alias)
 
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }
 
+alias cloudlink='echo "1139`oathtool --totp --base32  3NQJROCP6EVKBE36HSJMXNBSKU7CAHW2`" | pbcopy'
 alias vim='nvim'
 alias clr='clear'
 alias ls='ls -G'
@@ -50,7 +53,7 @@ fi
 setopt prompt_subst
 
 PROMPT='%B%K{blue}%F{white}%n%m%f%k %F{blue}[%d]%f`prompt-git-current-branch`%b
-%K{cyan} %B%#%b%k '
+%K{cyan}%B%#%b>%k '
 
 HISTFILE=~/.histfile
 HISTSIZE=10000
@@ -89,3 +92,6 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 function chpwd() { ls }
 setopt no_flow_control
 autoload zed
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /Users/01024163/usr/bin/terraform terraform

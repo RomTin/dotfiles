@@ -34,13 +34,23 @@
   "terminal.integrated.cursorStyle": "line",
   // ターミナルのフォント サイズをピクセル単位で制御します。
   "terminal.integrated.fontSize": 15,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "python.pythonPath": "~/.pyenv/versions/3.7.0/bin/python",
+  "python.pythonPath": "/usr/local/bin/python3",
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
   "editor.formatOnSave": true,
-  "editor.formatOnType": true
+  "editor.formatOnType": true,
+//live2d
+  "live2d.width": 300,  // 幅
+  "live2d.height": 400, // 高さ
+  "live2d.bottom": 300, //  底辺位置
+  "live2d.right": 20,  //  右側位置
+  "live2d.model": "miku",  //  キャラクター名を指定
+  "live2d.headPos": 0.5,  // 重心
+  "live2d.scale": 2, // スケール
+  "live2d.opacity": 0.7, // 透明度
+  "live2d.hoverOpacity": 1 // ホバー透明度
 }
